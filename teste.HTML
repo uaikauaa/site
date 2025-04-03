@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Interativa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Painel de Navegação</h2>
+      <nav>
+        <ul>
+          <li><a href="index.HTML">Início</a></li>
+          <li><a href="sobre.HTML">Sobre</a></li>
+          <li><a href="criadores.HTML">Serviços</a></li>
+          <!-- Link para a página interativa -->
+          <li><a href="teste.HTML" style="background: #555;">Interativo</a></li>
+          <li><a href="tabela.HTML">Tabela</a></li>
+          <li><a href="contato.Html">Contato</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <h1>Página Interativa</h1>
+      <p>Clique no botão para ver uma mensagem interativa via JavaScript:</p>
+      <button id="btn-interativo">Clique aqui</button>
+      <p id="mensagem"></p>
+    </main>
+  </div>
+  <script>
+    // Adiciona um evento de clique ao botão para exibir uma mensagem
+    document.getElementById("btn-interativo").addEventListener("click", function(){
+      document.getElementById("mensagem").textContent = "Olá! Esta é uma mensagem interativa via JavaScript!";
+    });
+  </script>
+   <!-- Rodapé -->
+   <footer>
+    <p>&copy;Unifio</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Reset básico e estilos para o corpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Container principal que organiza o layout em duas colunas */
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Estilos para a barra lateral */
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  /* Lista de navegação */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #555;
+  }
+  
+  /* Estilos para o conteúdo principal */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  /* Rodapé */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
